@@ -1,0 +1,82 @@
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #05f, #09f);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.slide {
+  border-radius: 5px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slideSibling {
+  border-radius: 5px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  scale: 0.5;
+  z-index: 10;
+}
+
+.slide[data-page="0"] {
+  border-radius: 25%;
+  background-color: green;
+}
+
+.slide[data-page="1"] {
+  border-radius: 25%;
+  background-color: red;
+}
+
+.slide[data-page="2"] {
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.slideSibling[data-page="0"] {
+  border-radius: 25%;
+  background-color: green;
+}
+
+.slideSibling[data-page="1"] {
+  border-radius: 25%;
+  background-color: red;
+}
+
+.slideSibling[data-page="2"] {
+  border-radius: 50%;
+  background-color: blue;
+}
